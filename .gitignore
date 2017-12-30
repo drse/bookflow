@@ -1,0 +1,5 @@
+node_modules/
+*.pdf
+_book/
+build/*
+!build/README.md

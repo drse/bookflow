@@ -1,0 +1,29 @@
+{
+	"root": "./src",
+	"title": "My Book",
+    "description": "My book description",
+    "author": "Me",
+    "plugins": ["autocover"],
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        },
+        "autocover": {
+            "font": {
+                "size": null,
+                "family": "Impact",
+                "color": "#FFF"
+            },
+            "size": {
+                "w": 1800,
+                "h": 2360
+            },
+            "background": {
+                "color": "#09F"
+            }
+        }
+    },
+    "styles": {
+        "website": "styles/website.css"
+    }
+}
