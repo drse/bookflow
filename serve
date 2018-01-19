@@ -1,3 +1,6 @@
 #!/bin/bash
 
-docker run -it --init --rm -v `pwd`:/docs:z -p 4000:4000 drse/bookflow serve . ./build/_book
+PORT=4000
+LRPORT=35729
+
+docker run -it --init --rm -v `pwd`:/docs:z -p $PORT:$PORT -p $LRPORT:$LRPORT drse/bookflow --port $PORT --lrport $LRPORT serve . ./build/_book
